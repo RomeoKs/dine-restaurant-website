@@ -17,14 +17,22 @@
     <body>
         <header>
             <div class="home-hero">
-                <div class="image-hero"><img src="./images/homepage/hero-bg-desktop@2x.jpg" alt="Dish of pasta with seafood"></div>            
+                <div class="image-hero">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="./images/homepage/hero-bg-mobile@2x.jpg">
+                        <source media="(min-width:481px) and (max-width:1024px)" srcset="./images/homepage/hero-bg-tablet@2x.jpg">
+                        <source media="(min-width:1025px)" srcset="./images/homepage/hero-bg-desktop@2x.jpg">
+                        <img src="./images/homepage/hero-bg-desktop@2x.jpg" alt="Dish of pasta with seafood" title="Dish of pasta with seafood">
+                    </picture>
+                    
+                </div>            
                 <nav>
                     <div class="logo">
                         <a href="./index.html"><img src="./images/logo.svg" /></a>
                     </div>
                 </nav>
                 <div class="hero-text">
-                    <h1>Exquisite dining since 1989     </h1>
+                    <h1>Exquisite dining<br>since 1989</h1>
                     <p class="para__1">
                         Experience our seasonal menu in beautiful country surroundings. Eat the freshest
                         produce from the comfort of our farmhouse.
@@ -37,7 +45,13 @@
         <main>
             <div class="first-container">
                 <div class="first-container__hero-image">
-                    <img src="./images/homepage/enjoyable-place-desktop@2x.jpg" alt="Rural view">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="./images/homepage/enjoyable-place-mobile@2x.jpg">
+                        <source media="(min-width:481px) and (max-width:1024px)" srcset="./images/homepage/enjoyable-place-tablet@2x.jpg">
+                        <source media="(min-width:1025px)" srcset="./images/homepage/enjoyable-place-desktop@2x.jpg">
+                        <img src="./images/homepage/enjoyable-place-desktop@2x.jpg" alt="Rural view">
+                    </picture>
+                    
                 </div>
                 <div class="first-container__hero-text">
                     <div class="divider-desktop">
@@ -53,7 +67,13 @@
             <div class="second-container">
                 <div class="lines"><img src="./images/patterns/pattern-lines.svg" alt="Decorative lines"></div>
                 <div class="second-container__hero-image">
-                    <img src="./images/homepage/locally-sourced-desktop@2x.jpg" alt="Cookind food">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="./images/homepage/locally-sourced-mobile@2x.jpg">
+                        <source media="(min-width:481px) and (max-width:1024px)" srcset="./images/homepage/locally-sourced-tablet@2x.jpg">
+                        <source media="(min-width:1025px)" srcset="./images/homepage/locally-sourced-desktop@2x.jpg">
+                        <img src="./images/homepage/locally-sourced-desktop@2x.jpg" alt="Cookind food">
+                    </picture>
+                    
                 </div>
                 
                 <div class="second-container__hero-text">
@@ -117,7 +137,12 @@
                     
                     <div class="slide slide-1 active">
                         <div class="slide-image">
-                            <img src="./images/homepage/family-gathering-desktop@2x.jpg" alt="People gathered at a table with food">
+                            <picture>
+                                <source media="(max-width:480px)" srcset="./images/homepage/family-gathering-mobile@2x.jpg">
+                                <source media="(min-width:481px) and (max-width:1024px)" srcset="./images/homepage/family-gathering-tablet@2x.jpg">
+                                <source media="(min-width:1025px)" srcset="./images/homepage/family-gathering-desktop@2x.jpg">
+                                <img src="./images/homepage/family-gathering-desktop@2x.jpg" alt="People gathered at a table with food">
+                            </picture>                            
                         </div>
                         <div class="slide-text">
                             <h2>Family Gathering</h2>
@@ -127,7 +152,12 @@
                     
                     <div class="slide slide-2">
                         <div class="slide-image">
-                            <img src="./images/homepage/special-events-desktop@2x.jpg" alt="People raising glasses at a restaurant">
+                            <picture>
+                                <source media="(max-width:480px)" srcset="./images/homepage/special-events-mobile@2x.jpg">
+                                <source media="(min-width:481px) and (max-width:1024px)" srcset="./images/homepage/special-events-tablet@2x.jpg">
+                                <source media="(min-width:1025px)" srcset="./images/homepage/special-events-desktop@2x.jpg">
+                                <img src="./images/homepage/special-events-desktop@2x.jpg" alt="People raising glasses at a restaurant">
+                            </picture>                            
                         </div>
                         <div class="slide-text">
                             <h2>Special Events</h2>
@@ -136,23 +166,25 @@
                     </div>
                     <div class="slide slide-3">
                         <div class="slide-image">
-                            <img src="./images/homepage/social-events-desktop@2x.jpg" alt="View from a restaurant table">
+                            <picture>
+                                <source media="(max-width:480px)" srcset="./images/homepage/social-events-mobile@2x.jpg">
+                                <source media="(min-width:481px) and (max-width:1024px)" srcset="./images/homepage/social-events-tablet@2x.jpg">
+                                <source media="(min-width:1025px)" srcset="./images/homepage/social-events-desktop@2x.jpg">
+                                <img src="./images/homepage/social-events-desktop@2x.jpg" alt="View from a restaurant table">
+                            </picture>                            
                         </div>
                         <div class="slide-text">
                             <h2>Social Events</h2>
                             <p class="para__1">Social Events Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.</p>
                         </div>
                     </div>
-                    
-                
-               
                 </div>
                 <div class="sliders-triggers__container">
                     <a href="booking.html" role="button" class="primary-button__dark">Book a table</a>
                     <ul class="sliders-triggers">
-                        <li class="trigger trigger__slider-1 active">Family Gathering</li>
-                        <li class="trigger trigger__slider-2">Special Events</li>
-                        <li class="trigger trigger__slider-3">Social Events</li>
+                        <li class="trigger trigger__slider-1 active">Family Gathering <div class="border-active"></div></li>
+                        <li class="trigger trigger__slider-2">Special Events<div class="border-active"></div></li>
+                        <li class="trigger trigger__slider-3">Social Events<div class="border-active"></div></li>
                     </ul>
                 </div>
             </div>
@@ -181,6 +213,6 @@
                 </ul>
             </div>
         </footer>
-        <script src="./scripts/scripts.js"></script>
+        <script src="./scripts/slide.js"></script>
     </body>
 </html>

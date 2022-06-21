@@ -1,0 +1,166 @@
+@import "_variables";
+@import "_breakpoints.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+a:-webkit-any-link {
+    font-family: "League Spartan", sans-serif;
+    text-decoration: none;
+}
+
+@mixin svgPattern($imageUrl) {
+    background-image: $imageUrl;
+    background-repeat: no-repeat;
+    background-size: 895px auto;
+}
+@mixin flexContainer($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+}
+body {
+    font-family: "League Spartan", sans-serif;
+    margin: 0px;
+}
+.para__1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #ffffff;
+    @include media("<=tablet") {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+    }
+}
+.para__2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #ffffff;
+}
+h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: -1px;
+    color: $secondary__m;
+    @include media("<=tablet") {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 133%;
+        letter-spacing: -0.6px;
+        text-align: center;
+    }
+}
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    color: $secondary__e;
+    @include media("<=tablet") {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        text-align: center;
+        letter-spacing: -0.5px;
+    }
+}
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.25px;
+    color: $secondary__m;
+}
+h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 165%;
+    letter-spacing: 2.5px;
+    color: $secondary__g2;
+}
+
+/*---------- BUTTONS ----------*/
+/*LIGHT BTN*/
+.primary-button__light {
+    font-family: "League Spartan", sans-serif;
+    padding: 25px 48px 23px 48px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 2.5px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    width: max-content;
+}
+.primary-button__light:focus {
+    outline: 4px solid $primary__b;
+    border: none;
+}
+.primary-button__light:hover {
+    background: #ffffff;
+    color: $secondary__m;
+    transition: all 0.3s ease-out;
+}
+.primary-button__light:hover a {
+    color: $secondary__m;
+}
+.primary-button__light:disabled {
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    cursor: not-allowed;
+}
+/*DARK BTN*/
+.primary-button__dark {
+    font-family: "League Spartan", sans-serif;
+    padding: 25px 54px 23px 54px;
+    background-color: $primary__g;
+    border: 1px solid $primary__g;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 2.5px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    width: max-content;
+}
+.primary-button__dark:focus {
+    outline: 4px solid $primary__b;
+    border: none;
+}
+.primary-button__dark:hover {
+    background: #ffffff;
+    color: $secondary__m;
+    transition: all 0.3s ease-out;
+}
+.primary-button__dark:hover a {
+    color: $secondary__m;
+}
+.primary-button__dark:disabled {
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    cursor: not-allowed;
+}
+
+/*------- END OF BUTTONS -------*/

@@ -1,0 +1,784 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:-webkit-any-link {
+  font-family: "League Spartan", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  margin: 0px;
+}
+
+.para__1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .para__1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+  }
+}
+
+.para__2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #ffffff;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  color: #17192b;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 133%;
+    letter-spacing: -0.6px;
+    text-align: center;
+  }
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+  color: #242b37;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.25px;
+  color: #17192b;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 165%;
+  letter-spacing: 2.5px;
+  color: #4c4c4c;
+}
+
+/*---------- BUTTONS ----------*/
+/*LIGHT BTN*/
+.primary-button__light {
+  font-family: "League Spartan", sans-serif;
+  padding: 25px 48px 23px 48px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.primary-button__light:focus {
+  outline: 4px solid #9e7f66;
+  border: none;
+}
+
+.primary-button__light:hover {
+  background: #ffffff;
+  color: #17192b;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.primary-button__light:hover a {
+  color: #17192b;
+}
+
+.primary-button__light:disabled {
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+/*DARK BTN*/
+.primary-button__dark {
+  font-family: "League Spartan", sans-serif;
+  padding: 25px 54px 23px 54px;
+  background-color: #111111;
+  border: 1px solid #111111;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.primary-button__dark:focus {
+  outline: 4px solid #9e7f66;
+  border: none;
+}
+
+.primary-button__dark:hover {
+  background: #ffffff;
+  color: #17192b;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.primary-button__dark:hover a {
+  color: #17192b;
+}
+
+.primary-button__dark:disabled {
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+/*------- END OF BUTTONS -------*/
+body {
+  width: 100%;
+}
+
+body header {
+  height: 600px;
+}
+
+body header .booking-hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body header .booking-hero .image-hero {
+  width: 100%;
+  height: 600px;
+}
+
+body header .booking-hero .image-hero img {
+  width: 100%;
+  height: 100%;
+}
+
+body header .booking-hero nav {
+  position: absolute;
+  width: 103px;
+  top: 65px;
+  left: 165px;
+}
+
+@media (max-width: 768px) {
+  body header .booking-hero nav {
+    top: 56px;
+    left: 39px;
+  }
+}
+
+body header .booking-hero nav img {
+  width: 100%;
+  height: auto;
+}
+
+body header .booking-hero .hero-text {
+  position: absolute;
+  top: 258px;
+  left: 165px;
+}
+
+@media (max-width: 768px) {
+  body header .booking-hero .hero-text {
+    top: 166px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+body header .booking-hero .hero-text h1 {
+  color: #fff;
+  width: 508px;
+}
+
+@media (max-width: 768px) {
+  body header .booking-hero .hero-text h1 {
+    text-align: center;
+    margin: 0px auto 12px auto;
+  }
+}
+
+body header .booking-hero .hero-text p {
+  width: 445px;
+  margin-top: 24px;
+  margin-bottom: 42px;
+}
+
+@media (max-width: 768px) {
+  body header .booking-hero .hero-text p {
+    text-align: center;
+    margin: auto;
+    width: 573px;
+  }
+}
+
+body main .form-wrapper {
+  height: 320px;
+  background-image: url("/images/patterns/pattern-curve-bottom-right.svg");
+  background-repeat: no-repeat;
+  background-size: 895px auto;
+  background-position: 0px 0px;
+  background-size: 993px 320px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  body main .form-wrapper {
+    background-image: none;
+    height: 435px;
+  }
+}
+
+body main .form-wrapper .lines {
+  position: absolute;
+  right: 625px;
+  top: 166px;
+}
+
+@media (max-width: 768px) {
+  body main .form-wrapper .lines {
+    display: none;
+  }
+}
+
+body main .form-wrapper .formData {
+  width: 540px;
+  height: 545px;
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+          box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+  right: 165px;
+  top: -342px;
+  padding: 48px;
+}
+
+@media (max-width: 768px) {
+  body main .form-wrapper .formData {
+    padding: 50px 48px 48px 48px;
+    position: static;
+    margin: auto;
+    -webkit-transform: translateY(-230px);
+            transform: translateY(-230px);
+  }
+}
+
+body main .form-wrapper .formData .submit-success {
+  position: absolute;
+  width: 100%;
+  height: 204px;
+  top: 120px;
+  left: 0;
+  opacity: 0;
+}
+
+body main .form-wrapper .formData .submit-success .success-active {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+body main .form-wrapper .formData .submit-success h1 {
+  color: #0c921e;
+  font-weight: 600;
+  margin-bottom: 96px;
+  text-align: center;
+}
+
+body main .form-wrapper .formData .submit-success .para__2 {
+  color: #111111;
+  text-align: center;
+}
+
+body main .form-wrapper .formData form {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .form-wrapper .formData form .form-inactive {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+body main .form-wrapper .formData form .input-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 43px;
+  position: relative;
+}
+
+body main .form-wrapper .formData form .input-group .errorMessage {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9px;
+  letter-spacing: -0.125px;
+  color: #b54949;
+  top: 55px;
+  left: 16px;
+  position: absolute;
+}
+
+body main .form-wrapper .formData form .input-group .error {
+  color: #b54949;
+  border-color: #b54949;
+}
+
+body main .form-wrapper .formData form .input-group .error::-webkit-input-placeholder {
+  color: #b54949;
+}
+
+body main .form-wrapper .formData form .input-group .error:-ms-input-placeholder {
+  color: #b54949;
+}
+
+body main .form-wrapper .formData form .input-group .error::-ms-input-placeholder {
+  color: #b54949;
+}
+
+body main .form-wrapper .formData form .input-group .error::placeholder {
+  color: #b54949;
+}
+
+body main .form-wrapper .formData form .input-group .success {
+  border-bottom: 2px solid #0c921e !important;
+}
+
+body main .form-wrapper .formData form .input-group .form-label {
+  min-width: 90px;
+  margin-right: 65px;
+  border: none;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+body main .form-wrapper .formData form .input-group input {
+  width: 100%;
+  height: 45px;
+  font-family: "League Spartan";
+  font-size: 20px;
+  color: #111111;
+  border: none;
+  line-height: 140%;
+  caret-color: #9e7f66;
+  cursor: pointer;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #8e8e8e;
+}
+
+body main .form-wrapper .formData form .input-group input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #111111;
+  opacity: 0.5;
+  padding-left: 16px;
+}
+
+body main .form-wrapper .formData form .input-group input:-ms-input-placeholder {
+  font-size: 20px;
+  color: #111111;
+  opacity: 0.5;
+  padding-left: 16px;
+}
+
+body main .form-wrapper .formData form .input-group input::-ms-input-placeholder {
+  font-size: 20px;
+  color: #111111;
+  opacity: 0.5;
+  padding-left: 16px;
+}
+
+body main .form-wrapper .formData form .input-group input::placeholder {
+  font-size: 20px;
+  color: #111111;
+  opacity: 0.5;
+  padding-left: 16px;
+}
+
+body main .form-wrapper .formData form .input-group input:focus-visible {
+  outline: none;
+  border-bottom: 1px solid #9e7f66;
+}
+
+body main .form-wrapper .formData form .input-group input:focus-within::-webkit-input-placeholder {
+  color: #9e7f66;
+}
+
+body main .form-wrapper .formData form .input-group input:focus-within:-ms-input-placeholder {
+  color: #9e7f66;
+}
+
+body main .form-wrapper .formData form .input-group input:focus-within::-ms-input-placeholder {
+  color: #9e7f66;
+}
+
+body main .form-wrapper .formData form .input-group input:focus-within::placeholder {
+  color: #9e7f66;
+}
+
+body main .form-wrapper .formData form .input-group input[type="number"] {
+  width: 80px;
+  padding-left: 16px;
+}
+
+body main .form-wrapper .formData form .input-group input[type="number"]::-webkit-input-placeholder {
+  padding-left: 0;
+}
+
+body main .form-wrapper .formData form .input-group input[type="number"]:-ms-input-placeholder {
+  padding-left: 0;
+}
+
+body main .form-wrapper .formData form .input-group input[type="number"]::-ms-input-placeholder {
+  padding-left: 0;
+}
+
+body main .form-wrapper .formData form .input-group input[type="number"]::placeholder {
+  padding-left: 0;
+}
+
+body main .form-wrapper .formData form .input-group input#year {
+  width: 97px;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 97px;
+  padding: 0px 16px 16px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #8e8e8e;
+  position: relative;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .chevron {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  width: 18px;
+  height: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .chevron.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-value {
+  font-family: "League Spartan";
+  font-size: 20px;
+  color: #111111;
+  line-height: 140%;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 106px;
+  height: 103px;
+  font-family: "League Spartan";
+  font-size: 20px;
+  color: #111111;
+  line-height: 140%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 15px 25px rgba(56, 66, 85, 0.24623);
+          box-shadow: 0px 15px 25px rgba(56, 66, 85, 0.24623);
+  z-index: 1;
+  display: none;
+  cursor: auto;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown .am,
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown .pm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown .am {
+  padding: 16px 30px 8px 16px;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown .pm {
+  padding: 8px 30px 16px 16px;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown .am:hover,
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown .pm:hover {
+  background-color: #9e7f663b;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown .meridian-icon {
+  visibility: hidden;
+}
+
+body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown .meridian-icon.active {
+  visibility: visible;
+}
+
+body main .form-wrapper .formData form .input-group.number-of-guests {
+  padding: 0px 30px;
+}
+
+body main .form-wrapper .formData form .input-group.number-of-guests .guest-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+body main .form-wrapper .formData form .input-group.number-of-guests .guest-input:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+body main .form-wrapper .formData form .input-group.number-of-guests .guest-number {
+  font-family: "League Spartan";
+  font-size: 20px;
+  color: #111111;
+  line-height: 140%;
+  font-weight: 600;
+}
+
+body main .form-wrapper .formData form .primary-button__dark {
+  width: 100%;
+  padding: 19px 102px 17px 102px;
+  line-height: 165%;
+}
+
+body footer {
+  padding: 80px 165px 76px 165px;
+  background-color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  body footer {
+    padding: 66px 0px 62px 39px;
+  }
+}
+
+body footer .logo {
+  min-width: 103px;
+  height: auto;
+}
+
+body footer .logo img {
+  width: 100%;
+  height: auto;
+}
+
+body footer .contact-info {
+  width: 814px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  body footer .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 130px;
+    width: 100%;
+  }
+}
+
+body footer .contact-info .first-column li,
+body footer .contact-info .second-column li {
+  color: #fff;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body footer .contact-info .first-column {
+  padding-right: 185px;
+}
+
+@media (max-width: 768px) {
+  body footer .contact-info .first-column {
+    margin-bottom: 32px;
+    padding: 0px;
+  }
+}
+
+body footer .contact-info .second-column {
+  padding-right: 185px;
+}
+
+@media (max-width: 768px) {
+  body footer .contact-info .second-column {
+    padding: 0px;
+  }
+}
+/*# sourceMappingURL=booking.css.map */

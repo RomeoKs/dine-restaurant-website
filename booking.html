@@ -1,38 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Dine Website Challenge</title>
-</head>
-<body>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./dist/css/booking.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
 
-  Reservations
+        <title>Frontend Mentor | Dine Website Challenge</title>
+    </head>
+    <body>
+        <header>
+            <div class="booking-hero">
+                <div class="image-hero">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="./images/booking/hero-bg-mobile@2x.jpg">
+                        <source media="(min-width:481px) and (max-width:1024px)" srcset="./images/booking/hero-bg-tablet@2x.jpg">
+                        <source media="(min-width:1025px)" srcset="./images/booking/hero-bg-desktop@2x.jpg">
+                        <img src="./images/booking/hero-bg-desktop@2x.jpg" alt="Slice of bread with a salad">
+                    </picture>
+                    
+                </div>            
+                <nav>
+                    <div class="logo">
+                        <a href="./index.html"><img src="./images/logo.svg" /></a>
+                    </div>
+                </nav>
+                <div class="hero-text">
+                    <h1>Reservations</h1>
+        <p class="para__1">
+            We can’t wait to host you. If you have any special requirements please feel free to call
+            on the phone number below. We’ll be happy to accommodate you.
+        </p>
+                    
+                </div>
+            </div>
+        </div>
+        </header>
+        
+        <main>
+            <div class="form-wrapper">
+                
+                <div class="lines"><img src="./images/patterns/pattern-lines.svg" alt="Decorative lines"></div>
+                <div class="formData">
+                    <div class="submit-success">
+                        <h1>Thank you!</h1>
+                        <p class="para__2">Your reservation has been succefully submited.<br>Please check your email for confirmation.</p>
+                    </div>
+                    <form action="#" name = "reservationForm" id="form" >
+                        <div class="input-group"><input type="text" name="name" id="name" placeholder="Name" maxlength="40"><div class="errorMessage"></div></div>
+                        <div class="input-group">
+                            <input type="email" name="email" id="email" placeholder="Email" maxlength="40"onfocusout="emailValidator()">
+                            <div id="emailMsg" class="errorMessage"></div>
+                        </div>
+                        <div class="input-group">
+                            <label class="form-label" for="date" id="date-label">Pick a date</label>
+                            <div class="errorMessage"></div>
+                            <input type="number" name="month" id="month" placeholder="MM" min="1" max="12">
+                            <input type="number" name="day" id="day" placeholder="DD" min="1" max="31">
+                            <input type="number" name="year" id="year" placeholder="YYYY" min="2022">
+                        </div>
+                        <div class="input-group">
+                            <label class="form-label" for="hour" id="time-label">Pick a time</label>
+                            <input type="number" name="hour" id="hour" min="09" max="22" placeholder="09">
+                            <input type="number" name="minute" id="minute" min="00" max="59" placeholder="00">
+                            <div class="errorMessage"></div>
+                            <div class="meridian-wrapper">
+                                <span class="meridian-value">AM</span>
+                                <div class="chevron"><img src="./images/icons/icon-arrow.svg" alt="chevron"></div>
+                                <div class="meridian-dropdown">
+                                    <div class="am"><span class="meridian-icon active"><img src="./images/icons/icon-check.svg" alt="check"></span> AM</div>
+                                    <div class="pm"><span class="meridian-icon"><img src="./images/icons/icon-check.svg" alt="check"></span>PM</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="input-group number-of-guests">
+                            <div class="guest-input minus" role="button"><img src="./images/icons/icon-minus.svg" alt="minus"></div>
+                            <div class="guest-number"><span class="guest-input-number">4</span> people</div>
+                            <div class="guest-input plus" role="button"><img src="./images/icons/icon-plus.svg" alt="pus"></div>
+                        </div>
+                        <input type="submit" class="primary-button__dark" value="Make Reservation">
+                    </form>
+                </div>
+        </main>
 
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
+        <footer>
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.svg" /></a>
+            </div>
 
-
-
-  Name
-  Email
-  Pick a date
-  Pick a time
-
-  Make Reservation
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
-</body>
+            <div class="contact-info">
+                <ul class="first-column">
+                    <li>Marthwaite, Sedbergh</li>
+                    <li>Cumbria</li>
+                    <li>+00 44 123 4567</li>
+                </ul>
+                <ul class="second-column">
+                    <li>Open Times</li>
+                    <li>Mon - Fri: 09:00 AM - 10:00 PM</li>
+                    <li>Sat - Sun: 09:00 AM - 11:30 PM</li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./scripts/booking.js"></script>
+    </body>
 </html>
