@@ -19,6 +19,11 @@ body {
   margin: 0px;
 }
 
+picture {
+  width: auto;
+  height: auto;
+}
+
 .para__1 {
   font-weight: 400;
   font-size: 20px;
@@ -31,6 +36,15 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .para__1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
     text-align: center;
   }
 }
@@ -61,6 +75,16 @@ h1 {
   }
 }
 
+@media (max-width: 375px) {
+  h1 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: -0.4px;
+  }
+}
+
 h2 {
   font-style: normal;
   font-weight: 700;
@@ -77,6 +101,16 @@ h2 {
     line-height: 100%;
     text-align: center;
     letter-spacing: -0.5px;
+  }
+}
+
+@media (max-width: 375px) {
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: -0.4px;
   }
 }
 
@@ -227,6 +261,16 @@ body header .booking-hero nav img {
   height: auto;
 }
 
+@media (max-width: 375px) {
+  body header .booking-hero nav {
+    width: 83px;
+    top: 56px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 body header .booking-hero .hero-text {
   position: absolute;
   top: 258px;
@@ -241,6 +285,15 @@ body header .booking-hero .hero-text {
   }
 }
 
+@media (max-width: 375px) {
+  body header .booking-hero .hero-text {
+    top: 132px;
+    left: 0;
+    width: 100%;
+    padding: 0 24px;
+  }
+}
+
 body header .booking-hero .hero-text h1 {
   color: #fff;
   width: 508px;
@@ -250,6 +303,12 @@ body header .booking-hero .hero-text h1 {
   body header .booking-hero .hero-text h1 {
     text-align: center;
     margin: 0px auto 12px auto;
+  }
+}
+
+@media (max-width: 375px) {
+  body header .booking-hero .hero-text h1 {
+    width: 100%;
   }
 }
 
@@ -267,6 +326,29 @@ body header .booking-hero .hero-text p {
   }
 }
 
+@media (max-width: 375px) {
+  body header .booking-hero .hero-text p {
+    width: 100%;
+  }
+}
+
+body header .booking-hero .hero-text .primary-button__light {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body header .booking-hero .hero-text .primary-button__light {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  body header .booking-hero .hero-text .primary-button__light {
+    display: block;
+    margin: 19px auto 0px auto;
+  }
+}
+
 body main .form-wrapper {
   height: 320px;
   background-image: url("/images/patterns/pattern-curve-bottom-right.svg");
@@ -281,6 +363,13 @@ body main .form-wrapper {
   body main .form-wrapper {
     background-image: none;
     height: 435px;
+  }
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper {
+    background-image: none;
+    height: 534px;
   }
 }
 
@@ -318,6 +407,16 @@ body main .form-wrapper .formData {
   }
 }
 
+@media (max-width: 375px) {
+  body main .form-wrapper .formData {
+    width: 327px;
+    height: 585px;
+    padding: 34px 32px 32px 32px;
+    -webkit-transform: translateY(-137px);
+            transform: translateY(-137px);
+  }
+}
+
 body main .form-wrapper .formData .submit-success {
   position: absolute;
   width: 100%;
@@ -325,6 +424,13 @@ body main .form-wrapper .formData .submit-success {
   top: 120px;
   left: 0;
   opacity: 0;
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData .submit-success {
+    padding: 48px;
+    height: auto;
+  }
 }
 
 body main .form-wrapper .formData .submit-success .success-active {
@@ -360,6 +466,14 @@ body main .form-wrapper .formData form {
           justify-content: space-between;
 }
 
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 body main .form-wrapper .formData form .form-inactive {
   opacity: 0;
   -webkit-transition: all 0.3s ease-out;
@@ -383,6 +497,105 @@ body main .form-wrapper .formData form .input-group {
           align-items: center;
   height: 43px;
   position: relative;
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group {
+    margin-bottom: 34px;
+  }
+}
+
+body main .form-wrapper .formData form .input-group .input-group__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group .input-group__date {
+    margin-top: 6px;
+  }
+}
+
+body main .form-wrapper .formData form .input-group .input-group__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group .input-group__time {
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .form-wrapper .formData form .input-group .input-group__date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .form-wrapper .formData form .input-group .input-group__time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group.time {
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group.date .errorMessage,
+  body main .form-wrapper .formData form .input-group.time .errorMessage {
+    top: 12px;
+    left: 105px;
+  }
 }
 
 body main .form-wrapper .formData form .input-group .errorMessage {
@@ -431,6 +644,13 @@ body main .form-wrapper .formData form .input-group .form-label {
   line-height: 140%;
 }
 
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group .form-label {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
 body main .form-wrapper .formData form .input-group input {
   width: 100%;
   height: 45px;
@@ -443,34 +663,31 @@ body main .form-wrapper .formData form .input-group input {
   cursor: pointer;
   padding-bottom: 15px;
   border-bottom: 1px solid #8e8e8e;
+  padding-left: 15px;
 }
 
 body main .form-wrapper .formData form .input-group input::-webkit-input-placeholder {
   font-size: 20px;
   color: #111111;
   opacity: 0.5;
-  padding-left: 16px;
 }
 
 body main .form-wrapper .formData form .input-group input:-ms-input-placeholder {
   font-size: 20px;
   color: #111111;
   opacity: 0.5;
-  padding-left: 16px;
 }
 
 body main .form-wrapper .formData form .input-group input::-ms-input-placeholder {
   font-size: 20px;
   color: #111111;
   opacity: 0.5;
-  padding-left: 16px;
 }
 
 body main .form-wrapper .formData form .input-group input::placeholder {
   font-size: 20px;
   color: #111111;
   opacity: 0.5;
-  padding-left: 16px;
 }
 
 body main .form-wrapper .formData form .input-group input:focus-visible {
@@ -515,8 +732,21 @@ body main .form-wrapper .formData form .input-group input[type="number"]::placeh
   padding-left: 0;
 }
 
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group input[type="number"] {
+    width: 73px;
+    padding-left: 15px;
+  }
+}
+
 body main .form-wrapper .formData form .input-group input#year {
   width: 97px;
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group input#year {
+    width: 88px;
+  }
 }
 
 body main .form-wrapper .formData form .input-group .meridian-wrapper {
@@ -538,6 +768,12 @@ body main .form-wrapper .formData form .input-group .meridian-wrapper {
   cursor: pointer;
   border-bottom: 1px solid #8e8e8e;
   position: relative;
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group .meridian-wrapper {
+    width: 88px;
+  }
 }
 
 body main .form-wrapper .formData form .input-group .meridian-wrapper .chevron {
@@ -605,6 +841,13 @@ body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-
   cursor: auto;
 }
 
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown {
+    width: 88px;
+    height: 103px;
+  }
+}
+
 body main .form-wrapper .formData form .input-group .meridian-wrapper .meridian-dropdown.active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,6 +895,24 @@ body main .form-wrapper .formData form .input-group.number-of-guests {
   padding: 0px 30px;
 }
 
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .input-group.number-of-guests {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 11px;
+    margin-top: 29px;
+    margin-bottom: 38px;
+  }
+}
+
 body main .form-wrapper .formData form .input-group.number-of-guests .guest-input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,13 +942,19 @@ body main .form-wrapper .formData form .input-group.number-of-guests .guest-numb
   font-size: 20px;
   color: #111111;
   line-height: 140%;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 body main .form-wrapper .formData form .primary-button__dark {
   width: 100%;
   padding: 19px 102px 17px 102px;
   line-height: 165%;
+}
+
+@media (max-width: 375px) {
+  body main .form-wrapper .formData form .primary-button__dark {
+    padding: 19px 36px 17px 36px;
+  }
 }
 
 body footer {
@@ -711,6 +978,22 @@ body footer {
   }
 }
 
+@media (max-width: 375px) {
+  body footer {
+    padding: 80px 24px 78px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 body footer .logo {
   min-width: 103px;
   height: auto;
@@ -719,6 +1002,13 @@ body footer .logo {
 body footer .logo img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 375px) {
+  body footer .logo {
+    width: 103px;
+    margin: 0px auto 38px auto;
+  }
 }
 
 body footer .contact-info {
@@ -752,6 +1042,12 @@ body footer .contact-info {
   }
 }
 
+@media (max-width: 375px) {
+  body footer .contact-info {
+    padding: 0;
+  }
+}
+
 body footer .contact-info .first-column li,
 body footer .contact-info .second-column li {
   color: #fff;
@@ -759,6 +1055,13 @@ body footer .contact-info .second-column li {
   line-height: 200%;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+@media (max-width: 375px) {
+  body footer .contact-info .first-column li,
+  body footer .contact-info .second-column li {
+    text-align: center;
+  }
 }
 
 body footer .contact-info .first-column {

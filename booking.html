@@ -34,18 +34,18 @@
                 </nav>
                 <div class="hero-text">
                     <h1>Reservations</h1>
-        <p class="para__1">
-            We can’t wait to host you. If you have any special requirements please feel free to call
-            on the phone number below. We’ll be happy to accommodate you.
-        </p>
-                    
+                    <p class="para__1">
+                        We can’t wait to host you. If you have any special requirements please feel free to call
+                        on the phone number below. We’ll be happy to accommodate you.
+                    </p>
+                    <div><a href="#form" role="button" class="primary-button__light">RESERVE PLACE</a></div>
                 </div>
             </div>
         </div>
         </header>
         
         <main>
-            <div class="form-wrapper">
+            <div class="form-wrapper" id="formWrapper">
                 
                 <div class="lines"><img src="./images/patterns/pattern-lines.svg" alt="Decorative lines"></div>
                 <div class="formData">
@@ -54,31 +54,37 @@
                         <p class="para__2">Your reservation has been succefully submited.<br>Please check your email for confirmation.</p>
                     </div>
                     <form action="#" name = "reservationForm" id="form" >
-                        <div class="input-group"><input type="text" name="name" id="name" placeholder="Name" maxlength="40"><div class="errorMessage"></div></div>
+                        <div class="input-group">
+                            <input type="text" name="name" id="name" placeholder="Name" maxlength="40">
+                            <div class="errorMessage"></div>
+                        </div>
                         <div class="input-group">
                             <input type="email" name="email" id="email" placeholder="Email" maxlength="40"onfocusout="emailValidator()">
                             <div id="emailMsg" class="errorMessage"></div>
                         </div>
-                        <div class="input-group">
+                        <div class="input-group date">
                             <label class="form-label" for="date" id="date-label">Pick a date</label>
                             <div class="errorMessage"></div>
-                            <input type="number" name="month" id="month" placeholder="MM" min="1" max="12">
-                            <input type="number" name="day" id="day" placeholder="DD" min="1" max="31">
-                            <input type="number" name="year" id="year" placeholder="YYYY" min="2022">
+                            <div class="input-group__date">
+                                <input type="number" name="month" id="month" placeholder="MM" min="1" max="12">
+                                <input type="number" name="day" id="day" placeholder="DD" min="1" max="31">
+                                <input type="number" name="year" id="year" placeholder="YYYY" min="2022">
+                            </div>
                         </div>
-                        <div class="input-group">
+                        <div class="input-group time">
                             <label class="form-label" for="hour" id="time-label">Pick a time</label>
+                            <div class="errorMessage"></div>
+                            <div class="input-group__time">
                             <input type="number" name="hour" id="hour" min="09" max="22" placeholder="09">
                             <input type="number" name="minute" id="minute" min="00" max="59" placeholder="00">
-                            <div class="errorMessage"></div>
-                            <div class="meridian-wrapper">
-                                <span class="meridian-value">AM</span>
-                                <div class="chevron"><img src="./images/icons/icon-arrow.svg" alt="chevron"></div>
-                                <div class="meridian-dropdown">
-                                    <div class="am"><span class="meridian-icon active"><img src="./images/icons/icon-check.svg" alt="check"></span> AM</div>
-                                    <div class="pm"><span class="meridian-icon"><img src="./images/icons/icon-check.svg" alt="check"></span>PM</div>
+                                <div class="meridian-wrapper">
+                                    <span class="meridian-value">AM</span>
+                                    <div class="chevron"><img src="./images/icons/icon-arrow.svg" alt="chevron"></div>
+                                    <div class="meridian-dropdown">
+                                        <div class="am"><span class="meridian-icon active"><img src="./images/icons/icon-check.svg" alt="check"></span> AM</div>
+                                        <div class="pm"><span class="meridian-icon"><img src="./images/icons/icon-check.svg" alt="check"></span>PM</div>
+                                    </div>                                
                                 </div>
-                                
                             </div>
                         </div>
                         <div class="input-group number-of-guests">

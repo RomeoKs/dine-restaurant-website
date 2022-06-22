@@ -4,10 +4,14 @@
 
 body {
     width: 100%;
+
     header {
         height: 820px;
         @include media("<=tablet") {
             height: 992px;
+        }
+        @include media("<=phone") {
+            height: 748px;
         }
 
         .home-hero {
@@ -17,9 +21,11 @@ body {
             .image-hero {
                 width: 100%;
                 height: 820px;
-
                 @include media("<=tablet") {
                     height: 992px;
+                }
+                @include media("<=phone") {
+                    height: 748px;
                 }
                 img {
                     width: 100%;
@@ -38,6 +44,10 @@ body {
                     left: 50%;
                     transform: translateX(-50%);
                 }
+                @include media("<=phone") {
+                    width: 83px;
+                    top: 232px;
+                }
                 img {
                     width: 100%;
                     height: auto;
@@ -54,6 +64,9 @@ body {
                     transform: translateX(-50%);
                     text-align: center;
                 }
+                @include media("<=phone") {
+                    top: 300px;
+                }
                 h1 {
                     color: #fff;
                     width: 508px;
@@ -69,6 +82,11 @@ body {
                         width: 573px;
                         margin-top: 20px;
                         margin-bottom: 52px;
+                    }
+                    @include media("<=phone") {
+                        width: 327px;
+                        margin-top: 21px;
+                        margin-bottom: 53px;
                     }
                 }
                 .primary-button__light {
@@ -92,6 +110,10 @@ body {
                 @include flexContainer(column);
                 background-position: -517px 100px;
             }
+            @include media("<=phone") {
+                background-image: none;
+                padding: 0px 24px;
+            }
             &__hero-image {
                 width: 540px;
                 height: 720px;
@@ -104,12 +126,20 @@ body {
                     height: 360px;
                     top: -96px;
                 }
+                @include media("<=phone") {
+                    width: 327px;
+                    height: 400px;
+                    top: -72px;
+                }
                 img {
                     position: absolute;
                     width: 100%;
                     height: 810px;
                     bottom: 0px;
                     @include media("<=tablet") {
+                        height: 100%;
+                    }
+                    @include media("<=phone") {
                         height: 100%;
                     }
                 }
@@ -121,6 +151,9 @@ body {
                     @include flexContainer(column);
                     align-items: center;
                 }
+                @include media("<=phone") {
+                    margin-top: -28px;
+                }
                 h2 {
                     width: 352px;
                     margin-top: 55px;
@@ -129,10 +162,18 @@ body {
                         margin-top: 36px;
                         margin-bottom: 27px;
                     }
+                    @include media("<=phone") {
+                        margin-top: 33px;
+                        margin-bottom: 13px;
+                        width: 230px;
+                    }
                 }
                 .para__1 {
                     color: $secondary__e;
                     width: 445px;
+                    @include media("<=phone") {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -151,6 +192,11 @@ body {
                 background-position: 384px 482px;
                 top: 94px;
             }
+            @include media("<=phone") {
+                background-image: none;
+                padding: 0px 24px;
+                margin-top: 25px;
+            }
             .lines {
                 position: absolute;
                 width: 160px;
@@ -160,6 +206,9 @@ body {
                 top: 282px;
                 @include media("<=tablet") {
                     top: 228px;
+                }
+                @include media("<=phone") {
+                    display: none;
                 }
                 img {
                     width: 100%;
@@ -175,6 +224,10 @@ body {
                 @include media("<=tablet") {
                     width: 573px;
                     height: 360px;
+                }
+                @include media("<=phone") {
+                    width: 327px;
+                    height: 400px;
                 }
                 img {
                     position: absolute;
@@ -195,12 +248,21 @@ body {
                     align-items: center;
                     padding-bottom: 118px;
                 }
+                @include media("<=phone") {
+                    margin-top: 44px;
+                    padding-bottom: 101px;
+                }
                 h2 {
                     width: 352px;
                     margin-top: 55px;
                     margin-bottom: 27px;
                     @include media("<=tablet") {
                         margin-top: 39px;
+                    }
+                    @include media("<=phone") {
+                        margin-top: 34px;
+                        margin-bottom: 13px;
+                        width: 220px;
                     }
                 }
                 .para__1 {
@@ -225,6 +287,10 @@ body {
                 margin-top: 94px;
                 padding: 98px;
             }
+            @include media("<=phone") {
+                margin-top: 101px;
+                padding: 72px 24px 78px 24px;
+            }
             .hihglights__hero-text {
                 @include media("<=tablet") {
                     @include flexContainer(column);
@@ -234,10 +300,17 @@ body {
                     color: #fff;
                     margin-top: 55px;
                     margin-bottom: 27px;
+                    @include media("<=phone") {
+                        margin-top: 36px;
+                        margin-bottom: 13px;
+                    }
                 }
             }
             ul {
                 margin-top: 30px;
+                @include media("<=phone") {
+                    margin-top: 0;
+                }
 
                 li:last-child {
                     padding-bottom: 0px;
@@ -248,14 +321,29 @@ body {
                     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
                     @include flexContainer(row);
                     width: 100%;
-
+                    @include media("<=phone") {
+                        @include flexContainer(column);
+                        height: 100%;
+                        align-items: center;
+                        height: 418px;
+                        margin-bottom: 24px;
+                    }
                     .dish-images {
                         position: relative;
                         width: 128px;
                         height: 96px;
+                        @include media("<=phone") {
+                            width: 100%;
+                            position: static;
+                            height: 100%;
+                        }
                         img {
                             width: 128px;
                             height: auto;
+                            @include media("<=phone") {
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                         .line {
                             position: absolute;
@@ -265,17 +353,30 @@ body {
                             top: 18px;
                             right: -32px;
                             z-index: 2;
+                            @include media("<=phone") {
+                                display: none;
+                            }
                         }
                     }
                     .dishes {
                         width: 350px;
                         margin-left: 62px;
+                        @include media("<=phone") {
+                            width: 100%;
+                            margin: 0;
+                        }
                         h3 {
                             color: #fff;
                             padding-top: 8px;
+                            @include media("<=phone") {
+                                text-align: center;
+                            }
                         }
                         .para__2 {
                             padding-top: 6px;
+                            @include media("<=phone") {
+                                text-align: center;
+                            }
                         }
                     }
                 }
@@ -295,6 +396,11 @@ body {
                 padding: 120px 98px 0px 98px;
                 height: 1024px;
             }
+            @include media("<=phone") {
+                padding: 80px 24px 124px 24px;
+                background-image: none;
+                height: 1044px;
+            }
             &:before {
                 content: url("/images/patterns/pattern-lines.svg");
                 position: absolute;
@@ -304,6 +410,9 @@ body {
                 @include media("<=tablet") {
                     top: 82px;
                     left: 39px;
+                }
+                @include media("<=phone") {
+                    content: none;
                 }
             }
             .sliders-container {
@@ -336,6 +445,10 @@ body {
                             width: 573px;
                             height: 360px;
                         }
+                        @include media("<=phone") {
+                            width: 326px;
+                            height: 400px;
+                        }
                         img {
                             width: 100%;
                         }
@@ -345,6 +458,9 @@ body {
                         @include media("<=tablet") {
                             padding-top: 140px;
                         }
+                        @include media("<=phone") {
+                            padding-top: 192px;
+                        }
                         .para__1 {
                             color: $secondary__e;
                             width: 445px;
@@ -352,6 +468,10 @@ body {
                             @include media("<=tablet") {
                                 width: 457px;
                                 margin: 19px auto 0px auto;
+                            }
+                            @include media("<=phone") {
+                                width: 100%;
+                                margin: 13px auto 0px auto;
                             }
                         }
                     }
@@ -374,6 +494,11 @@ body {
                         transform: translateY(-385px);
                         width: 630px;
                     }
+                    @include media("<=phone") {
+                        width: 100%;
+                        transform: translateY(-193px);
+                        @include flexContainer(column);
+                    }
 
                     .trigger {
                         font-size: 17px;
@@ -390,11 +515,12 @@ body {
                             margin-bottom: 0px;
                             font-weight: 600;
                             font-size: 17px;
-                            line-height: 28px;
-                            /* identical to box height, or 165% */
-
+                            line-height: 165%;
                             text-align: center;
                             letter-spacing: 2.5px;
+                        }
+                        @include media("<=phone") {
+                            margin-bottom: 16px;
                         }
                         &:hover {
                             opacity: 1;
@@ -407,6 +533,9 @@ body {
                                     border-bottom: 1px solid #9e7f66;
                                     width: 48px;
                                     margin: 7px auto 0px auto;
+                                }
+                                @include media("<=phone") {
+                                    margin: auto;
                                 }
                             }
                         }
@@ -430,6 +559,9 @@ body {
                         margin: auto;
                         transform: translateY(-122px);
                     }
+                    @include media("<=phone") {
+                        transform: translateY(0px);
+                    }
                 }
             }
         }
@@ -448,10 +580,19 @@ body {
                 @include flexContainer(column);
                 padding: 72px 0px 64px 0px;
             }
+            @include media("<=phone") {
+                height: 328px;
+                background-image: url("/images/homepage/ready-bg-mobile@2x.jpg");
+                @include flexContainer(column);
+                padding: 84px 24px 80px 24px;
+            }
             h2 {
                 color: #fff;
                 @include media("<=tablet") {
                     margin-bottom: 24px;
+                }
+                @include media("<=phone") {
+                    margin-bottom: 20px;
                 }
             }
         }
@@ -463,12 +604,20 @@ body {
         @include media("<=tablet") {
             padding: 66px 0px 62px 39px;
         }
+        @include media("<=phone") {
+            padding: 80px 24px 78px 24px;
+            @include flexContainer(column);
+        }
         .logo {
             min-width: 103px;
             height: auto;
             img {
                 width: 100%;
                 height: auto;
+            }
+            @include media("<=phone") {
+                width: 103px;
+                margin: 0px auto 38px auto;
             }
         }
         .contact-info {
@@ -479,6 +628,9 @@ body {
                 padding-left: 130px;
                 width: 100%;
             }
+            @include media("<=phone") {
+                padding: 0;
+            }
             .first-column li,
             .second-column li {
                 color: #fff;
@@ -486,6 +638,9 @@ body {
                 line-height: 200%;
                 letter-spacing: 2px;
                 text-transform: uppercase;
+                @include media("<=phone") {
+                    text-align: center;
+                }
             }
             .first-column {
                 padding-right: 185px;

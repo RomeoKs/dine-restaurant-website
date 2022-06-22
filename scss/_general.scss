@@ -28,15 +28,26 @@ body {
     font-family: "League Spartan", sans-serif;
     margin: 0px;
 }
+picture {
+    width: auto;
+    height: auto;
+}
 .para__1 {
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
     color: #ffffff;
+
     @include media("<=tablet") {
         font-weight: 400;
         font-size: 20px;
         line-height: 150%;
+        text-align: center;
+    }
+    @include media("<=phone") {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
         text-align: center;
     }
 }
@@ -53,12 +64,20 @@ h1 {
     line-height: 100%;
     letter-spacing: -1px;
     color: $secondary__m;
+
     @include media("<=tablet") {
         font-weight: 300;
         font-size: 48px;
         line-height: 133%;
         letter-spacing: -0.6px;
         text-align: center;
+    }
+    @include media("<=phone") {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 125%;
+        text-align: center;
+        letter-spacing: -0.4px;
     }
 }
 h2 {
@@ -74,6 +93,13 @@ h2 {
         line-height: 100%;
         text-align: center;
         letter-spacing: -0.5px;
+    }
+    @include media("<=phone") {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        text-align: center;
+        letter-spacing: -0.4px;
     }
 }
 h3 {

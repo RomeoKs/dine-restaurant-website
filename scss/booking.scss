@@ -30,6 +30,12 @@ body {
                     width: 100%;
                     height: auto;
                 }
+                @include media("<=phone") {
+                    width: 83px;
+                    top: 56px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
             .hero-text {
                 position: absolute;
@@ -40,12 +46,21 @@ body {
                     left: 0;
                     width: 100%;
                 }
+                @include media("<=phone") {
+                    top: 132px;
+                    left: 0;
+                    width: 100%;
+                    padding: 0 24px;
+                }
                 h1 {
                     color: #fff;
                     width: 508px;
                     @include media("<=tablet") {
                         text-align: center;
                         margin: 0px auto 12px auto;
+                    }
+                    @include media("<=phone") {
+                        width: 100%;
                     }
                 }
                 p {
@@ -56,6 +71,19 @@ body {
                         text-align: center;
                         margin: auto;
                         width: 573px;
+                    }
+                    @include media("<=phone") {
+                        width: 100%;
+                    }
+                }
+                .primary-button__light {
+                    display: none;
+                    @include media("<=tablet") {
+                        display: none;
+                    }
+                    @include media("<=phone") {
+                        display: block;
+                        margin: 19px auto 0px auto;
                     }
                 }
             }
@@ -71,6 +99,10 @@ body {
             @include media("<=tablet") {
                 background-image: none;
                 height: 435px;
+            }
+            @include media("<=phone") {
+                background-image: none;
+                height: 534px;
             }
 
             .lines {
@@ -96,6 +128,12 @@ body {
                     margin: auto;
                     transform: translateY(-230px);
                 }
+                @include media("<=phone") {
+                    width: 327px;
+                    height: 585px;
+                    padding: 34px 32px 32px 32px;
+                    transform: translateY(-137px);
+                }
                 .submit-success {
                     position: absolute;
                     width: 100%;
@@ -103,6 +141,10 @@ body {
                     top: 120px;
                     left: 0;
                     opacity: 0;
+                    @include media("<=phone") {
+                        padding: 48px;
+                        height: auto;
+                    }
                     .success-active {
                         transition: all 0.3s ease-out;
                     }
@@ -119,19 +161,59 @@ body {
                 }
                 form {
                     transition: all 0.3s ease-out;
+                    @include media("<=phone") {
+                        justify-content: flex-start;
+                    }
                     .form-inactive {
                         opacity: 0;
                         transition: all 0.3s ease-out;
                     }
                     height: 100%;
                     @include flexContainer(column);
-
                     .input-group {
                         width: 100%;
                         @include flexContainer(row);
                         align-items: center;
                         height: 43px;
                         position: relative;
+                        @include media("<=phone") {
+                            margin-bottom: 34px;
+                        }
+                        .input-group__date {
+                            @include flexContainer(row);
+                            width: 100%;
+                            @include media("<=phone") {
+                                margin-top: 6px;
+                            }
+                        }
+                        .input-group__time {
+                            @include flexContainer(row);
+                            width: 100%;
+                            @include media("<=phone") {
+                                margin-top: 6px;
+                            }
+                        }
+                        @include media("<=phone") {
+                            @include flexContainer(column);
+                            .input-group__date {
+                                @include flexContainer(row);
+                            }
+                            .input-group__time {
+                                @include flexContainer(row);
+                            }
+                        }
+                        &.time {
+                            @include media("<=phone") {
+                                margin-top: 36px;
+                            }
+                        }
+                        &.date .errorMessage,
+                        &.time .errorMessage {
+                            @include media("<=phone") {
+                                top: 12px;
+                                left: 105px;
+                            }
+                        }
                         .errorMessage {
                             font-family: "League Spartan";
                             font-style: normal;
@@ -160,6 +242,10 @@ body {
                             border: none;
                             font-size: 20px;
                             line-height: 140%;
+                            @include media("<=phone") {
+                                margin-right: 0;
+                                width: 100%;
+                            }
                         }
                         input {
                             width: 100%;
@@ -173,11 +259,12 @@ body {
                             cursor: pointer;
                             padding-bottom: 15px;
                             border-bottom: 1px solid #8e8e8e;
+                            padding-left: 15px;
                             &::placeholder {
                                 font-size: 20px;
                                 color: $primary__g;
                                 opacity: 0.5;
-                                padding-left: 16px;
+                                //padding-left: 16px;
                             }
                             &:focus-visible {
                                 outline: none;
@@ -192,9 +279,16 @@ body {
                                 &::placeholder {
                                     padding-left: 0;
                                 }
+                                @include media("<=phone") {
+                                    width: 73px;
+                                    padding-left: 15px;
+                                }
                             }
                             &#year {
                                 width: 97px;
+                                @include media("<=phone") {
+                                    width: 88px;
+                                }
                             }
                         }
                         .meridian-wrapper {
@@ -205,6 +299,9 @@ body {
                             cursor: pointer;
                             border-bottom: 1px solid #8e8e8e;
                             position: relative;
+                            @include media("<=phone") {
+                                width: 88px;
+                            }
                             .chevron {
                                 transition: all 0.3s ease-out;
                                 width: 18px;
@@ -239,6 +336,10 @@ body {
                                 z-index: 1;
                                 display: none;
                                 cursor: auto;
+                                @include media("<=phone") {
+                                    width: 88px;
+                                    height: 103px;
+                                }
                                 &.active {
                                     display: flex;
                                 }
@@ -270,6 +371,12 @@ body {
                         }
                         &.number-of-guests {
                             padding: 0px 30px;
+                            @include media("<=phone") {
+                                @include flexContainer(row);
+                                padding: 0px 11px;
+                                margin-top: 29px;
+                                margin-bottom: 38px;
+                            }
                             .guest-input {
                                 @include flexContainer(row);
                                 border: none;
@@ -286,7 +393,7 @@ body {
                                 font-size: 20px;
                                 color: $primary__g;
                                 line-height: 140%;
-                                font-weight: 600;
+                                font-weight: 700;
                             }
                         }
                     }
@@ -294,6 +401,9 @@ body {
                         width: 100%;
                         padding: 19px 102px 17px 102px;
                         line-height: 165%;
+                        @include media("<=phone") {
+                            padding: 19px 36px 17px 36px;
+                        }
                     }
                 }
             }
@@ -306,12 +416,20 @@ body {
         @include media("<=tablet") {
             padding: 66px 0px 62px 39px;
         }
+        @include media("<=phone") {
+            padding: 80px 24px 78px 24px;
+            @include flexContainer(column);
+        }
         .logo {
             min-width: 103px;
             height: auto;
             img {
                 width: 100%;
                 height: auto;
+            }
+            @include media("<=phone") {
+                width: 103px;
+                margin: 0px auto 38px auto;
             }
         }
         .contact-info {
@@ -322,6 +440,9 @@ body {
                 padding-left: 130px;
                 width: 100%;
             }
+            @include media("<=phone") {
+                padding: 0;
+            }
             .first-column li,
             .second-column li {
                 color: #fff;
@@ -329,6 +450,9 @@ body {
                 line-height: 200%;
                 letter-spacing: 2px;
                 text-transform: uppercase;
+                @include media("<=phone") {
+                    text-align: center;
+                }
             }
             .first-column {
                 padding-right: 185px;
